@@ -1,53 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<TableLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
     android:padding="24dp"
+    android:stretchColumns="1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-
+    <TableRow>
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="Login"
             android:textSize="24sp"
             android:textStyle="bold"
+            android:layout_span="2"
             android:layout_gravity="center"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Email:" />
 
         <EditText
             android:id="@+id/emailInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:minHeight="48dp" />
+            tools:ignore="TouchTargetSizeCheck" />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Password:" />
 
         <EditText
             android:id="@+id/passwordInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:hint="Password"
             android:inputType="textPassword"
-            android:minHeight="48dp" />
+            tools:ignore="TouchTargetSizeCheck" />
+    </TableRow>
 
+    <TableRow>
         <Button
             android:id="@+id/loginButton"
             android:text="Login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_span="2"
             android:layout_gravity="center"/>
-    </LinearLayout>
-
-</FrameLayout>
+    </TableRow>
+</TableLayout>
