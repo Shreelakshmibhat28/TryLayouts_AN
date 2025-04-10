@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TryLayouts</string>
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+    </string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+</resources>
