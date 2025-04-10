@@ -1,45 +1,36 @@
-<TableLayout
+<GridLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:padding="24dp"
-    android:stretchColumns="1"
+    android:columnCount="2"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <TableRow>
-        <TextView
-            android:text="Login"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_span="2"
-            android:layout_gravity="center"/>
-    </TableRow>
+    <TextView
+        android:text="Login"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_columnSpan="2"
+        android:layout_gravity="center"/>
 
-    <TableRow>
-        <TextView android:text="Email:" />
+    <TextView android:text="Email:" />
 
-        <EditText
-            android:id="@+id/emailInput"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
-            tools:ignore="TouchTargetSizeCheck" />
-    </TableRow>
+    <EditText
+        android:id="@+id/emailInput"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
 
-    <TableRow>
-        <TextView android:text="Password:" />
+    <TextView android:text="Password:" />
 
-        <EditText
-            android:id="@+id/passwordInput"
-            android:hint="Password"
-            android:inputType="textPassword"
-            tools:ignore="TouchTargetSizeCheck" />
-    </TableRow>
+    <EditText
+        android:id="@+id/passwordInput"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
 
-    <TableRow>
-        <Button
-            android:id="@+id/loginButton"
-            android:text="Login"
-            android:layout_span="2"
-            android:layout_gravity="center"/>
-    </TableRow>
-</TableLayout>
+    <Button
+        android:id="@+id/loginButton"
+        android:text="Login"
+        android:layout_columnSpan="2"
+        android:layout_gravity="center"/>
+</GridLayout>
